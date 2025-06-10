@@ -1,93 +1,89 @@
 
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f9f9f9;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: #fff5f8;
     color: #333;
 }
 
-header {
+header, footer {
+    background: #ffd6e8;
     text-align: center;
-    padding: 40px 20px;
-    background-color: #222;
-    color: #fff;
+    padding: 2rem 1rem;
+    border-radius: 0 0 1rem 1rem;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+nav {
+    background: #ffe6f0;
+    text-align: center;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-header p {
-    font-size: 1.2rem;
-}
-
-.btn-resume {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 24px;
-    background-color: #4CAF50;
-    color: white;
+nav a {
+    margin: 0 12px;
+    color: #d63384;
     text-decoration: none;
-    border-radius: 6px;
+    font-weight: bold;
 }
 
-.btn-resume:hover {
-    background-color: #45a049;
+section {
+    padding: 2rem 1rem;
+    max-width: 900px;
+    margin: auto;
 }
 
-.social-links {
-    margin-top: 16px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.card {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
 }
 
-.social-links img {
-    width: 30px;
-    height: 30px;
+img {
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem auto;
+    display: block;
+    border-radius: 1rem;
 }
 
-.services-section {
-    padding: 60px 20px;
-    text-align: center;
+.button {
+    background: #ff66a3;
+    padding: 0.8rem 1.5rem;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
 }
 
-.services-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
-}
-
-.services-cards .card {
-    background: #fff;
-    padding: 24px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    width: 260px;
+.button:hover {
+    background: #e0558f;
 }
 
 .whatsapp-btn {
     position: fixed;
-    bottom: 16px;
-    right: 16px;
-    width: 56px;
-    height: 56px;
-    z-index: 1000;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    animation: pulse 2s infinite;
 }
 
 .whatsapp-btn img {
     width: 100%;
     height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-@media (max-width: 768px) {
-    .services-cards {
-        flex-direction: column;
-        align-items: center;
-    }
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
 }

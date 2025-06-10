@@ -2,53 +2,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
     <title>Deepika Bansal - Graphic Designer</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header data-aos="fade-down">
         <h1>Deepika Bansal</h1>
-        <p>Graphic Designer | Illustrator | Creative Professional</p>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/deepikaproart/" target="_blank">
-                <img src="images/linkedin-icon.png" alt="LinkedIn" />
-            </a>
-            <a href="https://www.instagram.com/deepika_proarts/" target="_blank">
-                <img src="images/instagram-icon.png" alt="Instagram" />
-            </a>
-        </div>
-        <a href="files/Deepika_Bansal_Resume.pdf" class="btn-resume" target="_blank">Download My Resume</a>
+        <p>Graphic Designer | Illustrator | Branding Expert</p>
     </header>
 
-    <section id="services" class="services-section">
-        <h2>My Services</h2>
-        <div class="services-cards">
-            <div class="card">
-                <h3>Logo & Brand Design</h3>
-                <p>Creative and memorable logos with brand identity support.</p>
-            </div>
-            <div class="card">
-                <h3>Social Media Creatives</h3>
-                <p>Catchy posts, banners, and GIFs for high engagement.</p>
-            </div>
-            <div class="card">
-                <h3>Illustrations & Sketching</h3>
-                <p>Detailed hand-drawn and digital illustrations for any project.</p>
-            </div>
-            <div class="card">
-                <h3>Book & Magazine Design</h3>
-                <p>Professional layout and typography for print and digital media.</p>
-            </div>
-        </div>
+    <nav data-aos="fade-in">
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#resume">Resume</a>
+        <a href="#shop">Shop</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="card" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p>Deepika is a highly creative graphic designer with 6+ years of experience. She specializes in illustrations, branding, and visual storytelling across digital platforms.</p>
     </section>
 
-   <a href="https://api.whatsapp.com/send?phone=917011226789&text=Hi%20Deepika%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect." 
-   target="_blank" class="whatsapp-btn" rel="noopener">
-  <img src="images/whatsapp-icon.png" alt="Chat with me on WhatsApp" />
-</a>
-        <img src="images/whatsapp-icon.png" alt="WhatsApp" />
+    <section id="portfolio" class="card" data-aos="zoom-in">
+        <h2>Portfolio</h2>
+        <img src="images/placeholder1.jpg" alt="Sample Project 1">
+        <p>Branding and vector design samples.</p>
+        <img src="images/placeholder2.jpg" alt="Sample Project 2">
+        <p>Custom illustrations, social creatives and more.</p>
+    </section>
+
+    <section id="resume" class="card" data-aos="fade-up">
+        <h2>Resume</h2>
+        <a href="files/Deepika_Bansal_Resume.pdf" class="button" download>Download Resume</a>
+    </section>
+
+    <section id="shop" class="card" data-aos="zoom-in-up">
+        <h2>Shop</h2>
+        <p>Coming soon: custom illustrations, stickers, and creative assets.</p>
+    </section>
+
+    <section id="contact" class="card" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/deepikaproart/" target="_blank">deepikaproart</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/deepika_proarts/" target="_blank">@deepika_proarts</a></p>
+    </section>
+
+    <a href="https://api.whatsapp.com/send?phone=917011226789&text=Hi%20Deepika%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect." 
+       class="whatsapp-btn" target="_blank" rel="noopener" data-aos="zoom-in">
+        <img src="images/whatsapp-icon.png" alt="Chat on WhatsApp">
     </a>
+
+    <footer data-aos="fade-up">
+        <p>© 2025 Deepika Bansal</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
