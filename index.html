@@ -5,12 +5,88 @@
     <meta charset="UTF-8">
     <title>Deepika Bansal - Graphic Designer</title>
     <style>
-        body { font-family: sans-serif; background-color: #fef7f7; color: #444; margin: 0; padding: 0; }
-        header { background-color: #ffd9e8; padding: 1rem; text-align: center; }
-        section { padding: 2rem; }
-        .portfolio img { width: 100%; max-width: 300px; background: #eee; display: block; margin-bottom: 1rem; }
-        .card { background: white; border-radius: 10px; padding: 1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 1rem; }
-        footer { text-align: center; padding: 1rem; background-color: #ffd9e8; }
+        body {
+            margin: 0;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #fff7fa;
+            color: #444;
+            animation: fadeIn 1s ease-in;
+        }
+
+        header {
+            background-color: #ffd9e8;
+            padding: 1.5rem;
+            text-align: center;
+            border-bottom: 5px solid #ffcce0;
+        }
+
+        nav {
+            background: #ffebf2;
+            padding: 0.5rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 2px solid #ffcce0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #d63384;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            border-radius: 2rem;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            animation: slideUp 0.5s ease;
+        }
+
+        img {
+            width: 100%;
+            max-width: 300px;
+            background: #f0f0f0;
+            display: block;
+            margin: 1rem auto;
+            border-radius: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #ffd9e8;
+            border-top: 5px solid #ffcce0;
+        }
+
+        a.button {
+            background: #ff99cc;
+            padding: 0.7rem 1.2rem;
+            border-radius: 10px;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        @keyframes slideUp {
+            from {transform: translateY(20px); opacity: 0;}
+            to {transform: translateY(0); opacity: 1;}
+        }
     </style>
 </head>
 <body>
@@ -19,35 +95,40 @@
         <p>Graphic Designer | Illustrator | Branding Expert</p>
     </header>
 
-    <section class="about">
-        <div class="card">
-            <h2>About Me</h2>
-            <p>This is a placeholder bio. Deepika is a professional graphic designer with 6+ years of experience...</p>
-        </div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#resume">Resume</a>
+        <a href="#shop">Shop</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="card">
+        <h2>About Me</h2>
+        <p>This is a dummy bio section. Deepika is a highly creative and skilled graphic designer with over 6 years of experience. She specializes in illustrations, branding, and social media creatives.</p>
     </section>
 
-    <section class="portfolio">
-        <div class="card">
-            <h2>Portfolio</h2>
-            <img src="placeholder1.jpg" alt="Placeholder image 1" />
-            <p>Project description goes here...</p>
-            <img src="placeholder2.jpg" alt="Placeholder image 2" />
-            <p>Project description goes here...</p>
-        </div>
+    <section id="portfolio" class="card">
+        <h2>Portfolio</h2>
+        <img src="placeholder1.jpg" alt="Sample Project 1">
+        <p>Sample project description 1. Beautiful vector work or branding.</p>
+        <img src="placeholder2.jpg" alt="Sample Project 2">
+        <p>Sample project description 2. Cartoon-style illustration or poster.</p>
     </section>
 
-    <section class="resume">
-        <div class="card">
-            <h2>Resume</h2>
-            <a href="#">Download Resume (Coming Soon)</a>
-        </div>
+    <section id="resume" class="card">
+        <h2>Resume</h2>
+        <a href="#" class="button">Download Resume (Coming Soon)</a>
     </section>
 
-    <section class="contact">
-        <div class="card">
-            <h2>Contact</h2>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/deepikaproart/">deepikaproart</a></p>
-        </div>
+    <section id="shop" class="card">
+        <h2>Shop</h2>
+        <p>Custom illustrations and design assets will be available here soon.</p>
+    </section>
+
+    <section id="contact" class="card">
+        <h2>Contact</h2>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/deepikaproart/">deepikaproart</a></p>
     </section>
 
     <footer>
