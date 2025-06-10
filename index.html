@@ -2,137 +2,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Deepika Bansal - Graphic Designer</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            background-color: #fff7fa;
-            color: #444;
-            animation: fadeIn 1s ease-in;
-        }
-
-        header {
-            background-color: #ffd9e8;
-            padding: 1.5rem;
-            text-align: center;
-            border-bottom: 5px solid #ffcce0;
-        }
-
-        nav {
-            background: #ffebf2;
-            padding: 0.5rem;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            border-bottom: 2px solid #ffcce0;
-        }
-
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #d63384;
-            font-weight: bold;
-        }
-
-        section {
-            padding: 2rem;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        .card {
-            background: white;
-            border-radius: 2rem;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-            animation: slideUp 0.5s ease;
-        }
-
-        img {
-            width: 100%;
-            max-width: 300px;
-            background: #f0f0f0;
-            display: block;
-            margin: 1rem auto;
-            border-radius: 1rem;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #ffd9e8;
-            border-top: 5px solid #ffcce0;
-        }
-
-        a.button {
-            background: #ff99cc;
-            padding: 0.7rem 1.2rem;
-            border-radius: 10px;
-            color: white;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 1rem;
-        }
-
-        @keyframes fadeIn {
-            from {opacity: 0;}
-            to {opacity: 1;}
-        }
-
-        @keyframes slideUp {
-            from {transform: translateY(20px); opacity: 0;}
-            to {transform: translateY(0); opacity: 1;}
-        }
-    </style>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <header>
         <h1>Deepika Bansal</h1>
-        <p>Graphic Designer | Illustrator | Branding Expert</p>
+        <p>Graphic Designer | Illustrator | Creative Professional</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/deepikaproart/" target="_blank">
+                <img src="images/linkedin-icon.png" alt="LinkedIn" />
+            </a>
+            <a href="https://www.instagram.com/deepika_proarts/" target="_blank">
+                <img src="images/instagram-icon.png" alt="Instagram" />
+            </a>
+        </div>
+        <a href="files/Deepika_Bansal_Resume.pdf" class="btn-resume" target="_blank">Download My Resume</a>
     </header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#resume">Resume</a>
-        <a href="#shop">Shop</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <section id="about" class="card">
-        <h2>About Me</h2>
-        <p>This is a dummy bio section. Deepika is a highly creative and skilled graphic designer with over 6 years of experience. She specializes in illustrations, branding, and social media creatives.</p>
+    <section id="services" class="services-section">
+        <h2>My Services</h2>
+        <div class="services-cards">
+            <div class="card">
+                <h3>Logo & Brand Design</h3>
+                <p>Creative and memorable logos with brand identity support.</p>
+            </div>
+            <div class="card">
+                <h3>Social Media Creatives</h3>
+                <p>Catchy posts, banners, and GIFs for high engagement.</p>
+            </div>
+            <div class="card">
+                <h3>Illustrations & Sketching</h3>
+                <p>Detailed hand-drawn and digital illustrations for any project.</p>
+            </div>
+            <div class="card">
+                <h3>Book & Magazine Design</h3>
+                <p>Professional layout and typography for print and digital media.</p>
+            </div>
+        </div>
     </section>
 
-    <section id="portfolio" class="card">
-        <h2>Portfolio</h2>
-        <img src="placeholder1.jpg" alt="Sample Project 1">
-        <p>Sample project description 1. Beautiful vector work or branding.</p>
-        <img src="placeholder2.jpg" alt="Sample Project 2">
-        <p>Sample project description 2. Cartoon-style illustration or poster.</p>
-    </section>
-
-    <section id="resume" class="card">
-        <h2>Resume</h2>
-        <a href="#" class="button">Download Resume (Coming Soon)</a>
-    </section>
-
-    <section id="shop" class="card">
-        <h2>Shop</h2>
-        <p>Custom illustrations and design assets will be available here soon.</p>
-    </section>
-
-    <section id="contact" class="card">
-        <h2>Contact</h2>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/deepikaproart/">deepikaproart</a></p>
-    </section>
-
-    <footer>
-        <p>© 2025 Deepika Bansal</p>
-    </footer>
+    <a href="https://wa.me/917011226789" target="_blank" class="whatsapp-btn">
+        <img src="images/whatsapp-icon.png" alt="WhatsApp" />
+    </a>
 </body>
 </html>
